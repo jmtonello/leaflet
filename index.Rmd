@@ -9,5 +9,11 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## 18/may/2019
-Hello world!
+
+``` {r map, echo=FALSE}
+library(leaflet)
+leaflet() %>% addTiles() %>% 
+    addMarkers(lat=-34.914213, lng=-56.185384, popup="I work here!")
+```
+
+<https://jmtonello.github.io/leaflet/>
